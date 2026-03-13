@@ -16,12 +16,12 @@ bankruptcy-prediction-ensemble/
 ├── bankruptcy_prediction.ipynb          # Main modelling notebook (Optuna tuning + ensemble)
 ├── bankruptcy_prediction_pipeline.ipynb # Full EDA + 5-model benchmark (Kaggle version)
 ├── data/
-│   ├── bankruptcy_Train.csv              # Training set — 10,000 rows × 65 cols
+│   ├── bankruptcy_Train.csv             # Training set — 10,000 rows × 65 cols
 │   ├── bankruptcy_Test_X.csv            # Test features (unlabelled)
 │   └── bankruptcy_sample_submission.csv # Kaggle submission format
 ├── submissions/
-│   ├── submission_lgb.csv                # LightGBM-only predictions
-│   ├── submission_xgb_lgbm.csv           # XGB + LGBM ensemble
+│   ├── submission_lgb.csv               # LightGBM-only predictions
+│   ├── submission_xgb_lgbm.csv          # XGB + LGBM ensemble
 │   └── submission_ensemble_3models.csv  # Final 3-model ensemble
 └── README.md
 ```
@@ -91,7 +91,7 @@ jupyter notebook bankruptcy_prediction.ipynb
 
 ## Dataset
 
-Competition data from the **MGMT 571 Kaggle Competition** (Fall 2025). The dataset contains 64 anonymised financial ratio features for 10,000 companies with a binary bankruptcy label. The class distribution is highly imbalanced (~=:1 solvent-to-bankrupt ratio).
+Competition data from the **MGMT 571 Kaggle Competition** (Fall 2025). The dataset contains 64 anonymised financial ratio features for 10,000 companies with a binary bankruptcy label. The class distribution is highly imbalanced (~9:1 solvent-to-bankrupt ratio).
 
 ---
 
